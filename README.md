@@ -1,0 +1,3 @@
+[![Build Status](https://app.travis-ci.com/ricardovideoamp/ricardovideoamp.svg?branch=main)](https://app.travis-ci.com/ricardovideoamp/ricardovideoamp)
+[![Coverage Status](https://coveralls.io/repos/github/ricardovideoamp/tyba/badge.svg?branch=master)](https://coveralls.io/github/ricardovideoamp/tyba?branch=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d2d1906a2259eb2e133e/maintainability)](https://codeclimate.com/github/ricardovideoamp/tyba/maintainability)
