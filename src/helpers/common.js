@@ -1,8 +1,3 @@
-/**
- * Common functions that used in this project
- *
- */
-
 export function randomString(length) {
   let result = '';
   const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
