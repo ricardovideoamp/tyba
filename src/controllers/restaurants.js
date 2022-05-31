@@ -21,7 +21,7 @@ export const restaurantsPage = async (req, res) => {
       ({ city, coordinates } = req.query);
     }
     if (city) {
-      coordinates = getCityCoordianates(city);
+      coordinates = await getCityCoordianates(city);
     }
     const location = `location=${coordinates}`;
     const type = 'type=restaurant';
