@@ -2,7 +2,6 @@
 /**
  * Module dependencies.
  */
-import debug from 'debug';
 import http from 'http';
 import app from '../app';
 
@@ -45,12 +44,12 @@ const onError = error => {
   switch (error.code) {
   case 'EACCES':
     // eslint-disable-next-line no-alert
-    alert(`${bind} requires elevated privileges`);
+    console.log(`${bind} requires elevated privileges`);
     process.exit(1);
     break;
   case 'EADDRINUSE':
     // eslint-disable-next-line no-alert
-    alert(`${bind} is already in use`);
+    console.log(`${bind} is already in use`);
     process.exit(1);
     break;
   default:
@@ -64,7 +63,7 @@ const onError = error => {
 const onListening = () => {
   const addr = server.address();
   const bind = typeof addr === 'string' ? `pipe ${addr}` : `port ${addr.port}`;
-  debug(`Listening on ${bind}`);
+  console.log(`Listening on ${bind}`);
 };
 /**
  * Listen on provided port, on all network interfaces.
